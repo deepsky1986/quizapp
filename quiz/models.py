@@ -560,7 +560,7 @@ def upload_csv_file(instance, filename):
         num_ = qs.last().id + 1
     else:
         num_ = 1
-    return f'csv/{num_}/{instance.user.username}/{filename}'
+    return 'csv/{num_}/{instance.user.username}/{filename}'
 
 
 class CSVUpload(models.Model):
